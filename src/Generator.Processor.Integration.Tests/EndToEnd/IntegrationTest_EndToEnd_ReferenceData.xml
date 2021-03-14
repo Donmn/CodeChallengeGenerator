@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ReferenceData>
+	<Factors>
+		<ValueFactor>
+			<High>0.9</High>
+			<Medium>0.6</Medium>
+			<Low>0.2</Low>
+		</ValueFactor>
+		<EmissionsFactor >
+			<High>0.8</High>
+			<Medium>0.5</Medium>
+			<Low>0.3</Low>
+		</EmissionsFactor>
+	</Factors>
+</ReferenceData>
