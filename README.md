@@ -1,16 +1,20 @@
 # CodeChallengeGenerator
 
 ## Introduction
-This console application is for the code challenge to read an Xml input report, perform a series of caluclations and aggregations (with reference data) then produce an Xml output report.
+This console application has been developed for the following code challenge:
+ - Identify an Xml report arriving
+ - Read the Xml input report
+ - Perform a series of calculations and aggregations (with reference data)
+ - Produce an Xml output report
 
-Following the spec closly the application monitors a directory for reports and processes them immediatly when a report is dropped in.  Configuration of these folders location is stored in a standard .NET Core appsettings.json file.
+Following the spec closely, the application monitors a directory for reports and processes them immediately when a report is dropped in.  Configuration of these folders location is stored in a standard .NET Core appsettings.json file.
 
 ## Spec changes
-- The Xml report format for the Total heat for each coal generator didn't fit well and a collection has been added.
-- The system will archive the Report once it has been archived in a seperate folder.
+- The Xml report format for Actual Heat Rates for each coal generator didn't fit well and a collection has been added.
+- The system will archive the Report once it has been processed.
 
 ## Development
-The solution has been develped using .NET Core 3.1 in VS2019 community.
+The solution has been developed using .NET Core 3.1 in VS2019 community.
 
 A number of nuget packages have been used to facilitate some functionality and tooling for the application:
 
