@@ -1,2 +1,2 @@
-# CodeChallangeGenerator
-Code Challange Generator
+# CodeChallengeGenerator
+Code Challenge Generator
