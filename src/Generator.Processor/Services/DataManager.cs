@@ -8,7 +8,7 @@ namespace Generator.Processor.Services
     {
         private readonly IFileHelper _fileHelper;
         private readonly IXmlService _xmlService;
-        private const string rchiveDatePrefixFormat = "yyyyMMdd_HHmmss_";
+        private const string ArchiveDatePrefixFormat = "yyyyMMdd_HHmmss_";
 
         public DataManager(IFileHelper fileHelper, IXmlService xmlService)
         {
@@ -41,7 +41,7 @@ namespace Generator.Processor.Services
 
         public void MoveFileToArchiveWithTimestamp(string sourceFolder, string sourceFilename, string archiveFolder)
         {
-            var dateTimePrefix = DateTime.Now.ToString("yyyyMMdd_HHmmss_");
+            var dateTimePrefix = DateTime.Now.ToString(ArchiveDatePrefixFormat);
             var archiveFileName = dateTimePrefix + sourceFilename;
             _fileHelper.MoveFile(sourceFolder, sourceFilename, archiveFolder, archiveFileName);
         }
