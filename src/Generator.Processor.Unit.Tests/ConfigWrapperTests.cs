@@ -35,7 +35,7 @@ namespace Generator.Processor.Unit.Tests
         }
 
         [Fact]
-        public void Cstr_DoesNotThrow()
+        public void Cstr_DoesNotThrowAtAll()
         {
             var underTest = new ConfigWrapper(_config);
             Assert.NotNull(underTest);
