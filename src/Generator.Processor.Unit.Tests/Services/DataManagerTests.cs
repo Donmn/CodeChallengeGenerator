@@ -31,7 +31,7 @@ namespace Generator.Processor.Unit.Tests.Services
         }
 
         [Fact]
-        public void Ctr_WhenParametersAreNull_Throws()
+        public void Ctr_WhenParametersAreNull_ThrowsAlways()
         {
             Assert.Throws<ArgumentNullException>(() => new DataManager(null, _xmlService.Object));
             Assert.Throws<ArgumentNullException>(() => new DataManager(_fileHelper.Object, null));
